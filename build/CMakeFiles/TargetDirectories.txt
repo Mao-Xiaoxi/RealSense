@@ -1,0 +1,4 @@
+/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles/myAlign.dir
+/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles/myTest.dir
+/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles/edit_cache.dir
+/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles/rebuild_cache.dir
