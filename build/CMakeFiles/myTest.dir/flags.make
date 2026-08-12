@@ -6,5 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/maoxiaoxi/Documents/Packages/librealsense/include -isystem /usr/local/include/opencv4
 
-CXX_FLAGS = -std=c++17
+CXX_FLAGSarm64 = -std=c++17 -arch arm64
+
+CXX_FLAGS = -std=c++17 -arch arm64
 

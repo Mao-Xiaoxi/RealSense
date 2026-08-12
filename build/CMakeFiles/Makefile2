@@ -63,13 +63,17 @@ CMAKE_BINARY_DIR = /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/myAlign.dir/all
+all: CMakeFiles/auxiliary.dir/all
+all: CMakeFiles/myMeasure.dir/all
 all: CMakeFiles/myTest.dir/all
+all: CMakeFiles/myAlign.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/myAlign.dir/codegen
+codegen: CMakeFiles/auxiliary.dir/codegen
+codegen: CMakeFiles/myMeasure.dir/codegen
 codegen: CMakeFiles/myTest.dir/codegen
+codegen: CMakeFiles/myAlign.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -77,41 +81,75 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/myAlign.dir/clean
+clean: CMakeFiles/auxiliary.dir/clean
+clean: CMakeFiles/myMeasure.dir/clean
 clean: CMakeFiles/myTest.dir/clean
+clean: CMakeFiles/myAlign.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/myAlign.dir
+# Target rules for target CMakeFiles/auxiliary.dir
 
 # All Build rule for target.
-CMakeFiles/myAlign.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=1,2 "Built target myAlign"
-.PHONY : CMakeFiles/myAlign.dir/all
+CMakeFiles/auxiliary.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=1,2 "Built target auxiliary"
+.PHONY : CMakeFiles/auxiliary.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/myAlign.dir/rule: cmake_check_build_system
+CMakeFiles/auxiliary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myAlign.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/auxiliary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 0
-.PHONY : CMakeFiles/myAlign.dir/rule
+.PHONY : CMakeFiles/auxiliary.dir/rule
 
 # Convenience name for target.
-myAlign: CMakeFiles/myAlign.dir/rule
-.PHONY : myAlign
+auxiliary: CMakeFiles/auxiliary.dir/rule
+.PHONY : auxiliary
 
 # codegen rule for target.
-CMakeFiles/myAlign.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=1,2 "Finished codegen for target myAlign"
-.PHONY : CMakeFiles/myAlign.dir/codegen
+CMakeFiles/auxiliary.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=1,2 "Finished codegen for target auxiliary"
+.PHONY : CMakeFiles/auxiliary.dir/codegen
 
 # clean rule for target.
-CMakeFiles/myAlign.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/clean
-.PHONY : CMakeFiles/myAlign.dir/clean
+CMakeFiles/auxiliary.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/clean
+.PHONY : CMakeFiles/auxiliary.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/myMeasure.dir
+
+# All Build rule for target.
+CMakeFiles/myMeasure.dir/all: CMakeFiles/auxiliary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=5,6 "Built target myMeasure"
+.PHONY : CMakeFiles/myMeasure.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/myMeasure.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myMeasure.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/myMeasure.dir/rule
+
+# Convenience name for target.
+myMeasure: CMakeFiles/myMeasure.dir/rule
+.PHONY : myMeasure
+
+# codegen rule for target.
+CMakeFiles/myMeasure.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=5,6 "Finished codegen for target myMeasure"
+.PHONY : CMakeFiles/myMeasure.dir/codegen
+
+# clean rule for target.
+CMakeFiles/myMeasure.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/clean
+.PHONY : CMakeFiles/myMeasure.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/myTest.dir
@@ -120,7 +158,7 @@ CMakeFiles/myAlign.dir/clean:
 CMakeFiles/myTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myTest.dir/build.make CMakeFiles/myTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myTest.dir/build.make CMakeFiles/myTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=3,4 "Built target myTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=7,8 "Built target myTest"
 .PHONY : CMakeFiles/myTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,13 +175,45 @@ myTest: CMakeFiles/myTest.dir/rule
 # codegen rule for target.
 CMakeFiles/myTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myTest.dir/build.make CMakeFiles/myTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=3,4 "Finished codegen for target myTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=7,8 "Finished codegen for target myTest"
 .PHONY : CMakeFiles/myTest.dir/codegen
 
 # clean rule for target.
 CMakeFiles/myTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myTest.dir/build.make CMakeFiles/myTest.dir/clean
 .PHONY : CMakeFiles/myTest.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/myAlign.dir
+
+# All Build rule for target.
+CMakeFiles/myAlign.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=3,4 "Built target myAlign"
+.PHONY : CMakeFiles/myAlign.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/myAlign.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myAlign.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles 0
+.PHONY : CMakeFiles/myAlign.dir/rule
+
+# Convenience name for target.
+myAlign: CMakeFiles/myAlign.dir/rule
+.PHONY : myAlign
+
+# codegen rule for target.
+CMakeFiles/myAlign.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/build/CMakeFiles --progress-num=3,4 "Finished codegen for target myAlign"
+.PHONY : CMakeFiles/myAlign.dir/codegen
+
+# clean rule for target.
+CMakeFiles/myAlign.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/clean
+.PHONY : CMakeFiles/myAlign.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/Users/maoxiaoxi/Documents/Packages/fltk/build/FLTK-Targets.cmake"
+  "/Users/maoxiaoxi/Documents/Packages/fltk/build/FLTKConfig.cmake"
   "/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest/CMakeLists.txt"
   "CMakeFiles/4.4.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.2/CMakeSystem.cmake"
@@ -21,8 +23,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindFLTK.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindOpenGL.cmake"
   "/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake"
+  "/opt/homebrew/share/cmake/Modules/FindX11.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake"
@@ -54,6 +59,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/myAlign.dir/DependInfo.cmake"
+  "CMakeFiles/auxiliary.dir/DependInfo.cmake"
+  "CMakeFiles/myMeasure.dir/DependInfo.cmake"
   "CMakeFiles/myTest.dir/DependInfo.cmake"
+  "CMakeFiles/myAlign.dir/DependInfo.cmake"
   )

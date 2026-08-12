@@ -1,0 +1,2 @@
+/usr/bin/ar qc libauxiliary.a CMakeFiles/auxiliary.dir/auxiliary.cpp.o
+/usr/bin/ranlib libauxiliary.a

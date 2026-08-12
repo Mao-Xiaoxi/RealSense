@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/maoxiaoxi/Documents/Packages/librealsense/include -isystem /usr/local/include/opencv4
+CXX_INCLUDES = -I/Users/maoxiaoxi/Documents/code/Projects/RealSenseTest
 
 CXX_FLAGSarm64 = -std=c++17 -arch arm64
 

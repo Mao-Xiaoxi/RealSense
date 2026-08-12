@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myAlign
+# Target rules for targets named auxiliary
 
 # Build rule for target.
-myAlign: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myAlign
-.PHONY : myAlign
+auxiliary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 auxiliary
+.PHONY : auxiliary
 
 # fast build rule for target.
-myAlign/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/build
-.PHONY : myAlign/fast
+auxiliary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/build
+.PHONY : auxiliary/fast
+
+#=============================================================================
+# Target rules for targets named myMeasure
+
+# Build rule for target.
+myMeasure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myMeasure
+.PHONY : myMeasure
+
+# fast build rule for target.
+myMeasure/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/build
+.PHONY : myMeasure/fast
 
 #=============================================================================
 # Target rules for targets named myTest
@@ -141,6 +154,43 @@ myTest: cmake_check_build_system
 myTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myTest.dir/build.make CMakeFiles/myTest.dir/build
 .PHONY : myTest/fast
+
+#=============================================================================
+# Target rules for targets named myAlign
+
+# Build rule for target.
+myAlign: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myAlign
+.PHONY : myAlign
+
+# fast build rule for target.
+myAlign/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/build
+.PHONY : myAlign/fast
+
+auxiliary.o: auxiliary.cpp.o
+.PHONY : auxiliary.o
+
+# target to build an object file
+auxiliary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/auxiliary.cpp.o
+.PHONY : auxiliary.cpp.o
+
+auxiliary.i: auxiliary.cpp.i
+.PHONY : auxiliary.i
+
+# target to preprocess a source file
+auxiliary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/auxiliary.cpp.i
+.PHONY : auxiliary.cpp.i
+
+auxiliary.s: auxiliary.cpp.s
+.PHONY : auxiliary.s
+
+# target to generate assembly for a file
+auxiliary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auxiliary.dir/build.make CMakeFiles/auxiliary.dir/auxiliary.cpp.s
+.PHONY : auxiliary.cpp.s
 
 myAlign.o: myAlign.cpp.o
 .PHONY : myAlign.o
@@ -165,6 +215,30 @@ myAlign.s: myAlign.cpp.s
 myAlign.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myAlign.dir/build.make CMakeFiles/myAlign.dir/myAlign.cpp.s
 .PHONY : myAlign.cpp.s
+
+myMeasure.o: myMeasure.cpp.o
+.PHONY : myMeasure.o
+
+# target to build an object file
+myMeasure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/myMeasure.cpp.o
+.PHONY : myMeasure.cpp.o
+
+myMeasure.i: myMeasure.cpp.i
+.PHONY : myMeasure.i
+
+# target to preprocess a source file
+myMeasure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/myMeasure.cpp.i
+.PHONY : myMeasure.cpp.i
+
+myMeasure.s: myMeasure.cpp.s
+.PHONY : myMeasure.s
+
+# target to generate assembly for a file
+myMeasure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myMeasure.dir/build.make CMakeFiles/myMeasure.dir/myMeasure.cpp.s
+.PHONY : myMeasure.cpp.s
 
 myTest.o: myTest.cpp.o
 .PHONY : myTest.o
@@ -198,11 +272,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... auxiliary"
 	@echo "... myAlign"
+	@echo "... myMeasure"
 	@echo "... myTest"
+	@echo "... auxiliary.o"
+	@echo "... auxiliary.i"
+	@echo "... auxiliary.s"
 	@echo "... myAlign.o"
 	@echo "... myAlign.i"
 	@echo "... myAlign.s"
+	@echo "... myMeasure.o"
+	@echo "... myMeasure.i"
+	@echo "... myMeasure.s"
 	@echo "... myTest.o"
 	@echo "... myTest.i"
 	@echo "... myTest.s"
